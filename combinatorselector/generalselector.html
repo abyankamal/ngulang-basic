@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>General Selector</title>
+    <style>
+      div ~ p {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- tidak dipilih karena berada diatas div -->
+    <p>Ini Tidak Dipilih</p>
+    <div>
+      <article>
+        <!-- tidak dipilih tidak sejajar dengan div -->
+        <p>Ini Tidak Dipilih</p>
+      </article>
+      <!-- tidak dipilih tidak sejajar dengan div -->
+      <p>Ini Tidak Dipilih</p>
+    </div>
+    <!-- dipilih karena berada dibawah dan sejajar dengan div -->
+    <p>Ini Dipilih</p>
+    <p>Ini Dipilih</p>
+  </body>
+</html>

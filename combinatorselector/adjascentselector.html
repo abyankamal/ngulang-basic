@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adjascent Selector</title>
+    <style>
+      div + p {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <article>
+        <!-- tidak dipilih tidak sejajar dengan div -->
+        <p>Ini Tidak Dipilih</p>
+      </article>
+      <!-- tidak dipilih tidak sejajar dengan div -->
+      <p>Ini Tidak Dipilih</p>
+    </div>
+    <!-- dipilih karena berada dibawah dan sejajar dengan div -->
+    <p>Ini Dipilih</p>
+    <!-- tidak dipilih karena element diatas terpilih terlebih dahulu -->
+    <p>Ini Tidak Dipilih</p>
+  </body>
+</html>
