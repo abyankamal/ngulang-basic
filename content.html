@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Content</title>
+    <style>
+      .content {
+        background-color: aquamarine;
+      }
+      .content::before {
+        content: "udin";
+        margin-right: 20px;
+      }
+      .content::after {
+        content: "udin";
+        margin-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="content">This is content</h1>
+  </body>
+</html>
