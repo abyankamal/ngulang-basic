@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar Counter</title>
+    <style>
+      body {
+        /* Set "section" to 0 */
+        counter-reset: section;
+      }
+
+      h1 {
+        /* Set "subsection" to 0 */
+        counter-reset: subsection;
+      }
+
+      h1::before {
+        counter-increment: section;
+        content: "" counter(section) ". ";
+      }
+
+      h2::before {
+        counter-increment: subsection;
+        content: counter(section) "." counter(subsection) " ";
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Judul</h1>
+    <h2>Sub Judul</h2>
+    <h2>Sub Judul</h2>
+    <h2>Sub Judul</h2>
+    <h1>Judul</h1>
+    <h2>Sub Judul</h2>
+    <h2>Sub Judul</h2>
+    <h2>Sub Judul</h2>
+    <h1>Judul</h1>
+    <h2>Sub Judul</h2>
+    <h2>Sub Judul</h2>
+    <h2>Sub Judul</h2>
+    <h1>Judul</h1>
+    <h2>Sub Judul</h2>
+    <h2>Sub Judul</h2>
+    <h2>Sub Judul</h2>
+  </body>
+</html>
